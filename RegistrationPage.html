@@ -1,0 +1,300 @@
+<div class="registration-form-container">
+    <p>Please fill in this form to register.</p>
+    <form action="/submit-registration" method="post">
+        <!-- School Name -->
+        <div class="form-group">
+            <label for="schoolName" class="large-label">Name of School / District *</label>
+            <input type="text" id="schoolName" name="school_name" required>
+        </div>
+
+        <!-- Highschool or Middle school Checkbox -->
+        <div class="form-group">
+            <label for="programInterest" class="large-label">The following programs are interested in *</label>
+            <div class="checkbox-group">
+                <label>
+                    <input type="checkbox" id="highSchool" name="program_interest" value="High School">
+                    High School (9-12)
+                </label>
+            </div>
+            <div class="checkbox-group">
+                <label>
+                    <input type="checkbox" id="middleSchool" name="program_interest" value="Middle School">
+                    Middle School (6-8)
+                </label>
+            </div>
+        </div>
+
+        <!-- Administration Approval Checkbox -->
+        <div class="form-group">
+            <label for="AdminAproved" class="large-label">Does your school/district administration approve of you having an esports team representing your school and competing with other Michigan schools/districts? *</label>
+            <div class="radio-group">
+                <label>
+                    <input type="radio" id="approvalYes" name="approval" value="yes" required>
+                    Yes
+                </label>
+            </div>
+            <div class="radio-group">
+                <label>
+                    <input type="radio" id="approvalNo" name="approval" value="no" required>
+                    No
+                </label>
+            </div>
+            <div class="radio-group">
+                <label>
+                    <input type="radio" id="approvalMaybe" name="approval" value="maybe" required>
+                    Maybe
+                </label>
+            </div>
+        </div>
+
+        <!-- Primary Adult Contact -->
+        <div class="form-group">
+            <label for="contactName" class="large-label">Primary Adult Contact Name *</label>
+            <input type="text" id="contactName" name="contact_name" required>
+        </div>
+
+        <!-- Primary Contact Email -->
+        <div class="form-group">
+            <label for="contactEmail" class="large-label">Primary Contact Email Address *</label>
+            <input type="email" id="contactEmail" name="contact_email" required>
+        </div>
+
+        <!-- Primary Contact Discord ID -->
+        <div class="form-group">
+            <label for="discordId" class="large-label">Primary Contact Discord ID *</label>
+            <input type="text" id="discordId" name="discord_id" required>
+        </div>
+
+        <div class="form-group">
+            <label for="1on1" class="large-label">Would you like a 1-1 session to go over K-12 esports in Michigan and MiHSEF? *</label>
+            <div class="radio-group">
+                <label><input type="radio" name="one_on_one_session" value="Yes" required> Yes</label>
+                <label><input type="radio" name="one_on_one_session" value="No" required> No</label>
+                <label><input type="radio" name="one_on_one_session" value="Maybe" required> Maybe</label>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label>Would you like someone to contact you regarding joining MiHSEF immediately and enjoying the benefits? *</label>
+            <div class="radio-group">
+                <label><input type="radio" name="one_on_one_session" value="Yes" required> Yes</label>
+                <label><input type="radio" name="one_on_one_session" value="No" required> No</label>
+                <label><input type="radio" name="one_on_one_session" value="Maybe" required> Maybe</label>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label>Would you like someone to contact you regarding the next season of league play and local events MiHSEF hosts? *</label>
+            <div class="radio-group">
+                <label><input type="radio" name="one_on_one_session" value="Yes" required> Yes</label>
+                <label><input type="radio" name="one_on_one_session" value="No" required> No</label>
+                <label><input type="radio" name="one_on_one_session" value="Maybe" required> Maybe</label>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label>Would you like someone to contact you regarding league policies, rules, or other information? *</label>
+            <div class="radio-group">
+                <label><input type="radio" name="one_on_one_session" value="Yes" required> Yes</label>
+                <label><input type="radio" name="one_on_one_session" value="No" required> No</label>
+                <label><input type="radio" name="one_on_one_session" value="Maybe" required> Maybe</label>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label>Would you be interested in attending a coaching clinic / summit in August? *</label>
+            <div class="radio-group">
+                <label><input type="radio" name="one_on_one_session" value="Yes" required> Yes</label>
+                <label><input type="radio" name="one_on_one_session" value="No" required> No</label>
+                <label><input type="radio" name="one_on_one_session" value="Maybe" required> Maybe</label>
+            </div>
+        </div>
+
+        <!-- Games -->
+        <div class="form-group">
+            <label>What Games is Your School Interested In? *</label>
+            <div class="checkbox-group" style="display: flex; flex-wrap: wrap; justify-content: space-around;">
+                <label><input type="checkbox" name="interested_games[]" value="Rocket League"> 
+                    Rocket League
+                </label>
+                <label><input type="checkbox" name="interested_games[]" value="Valorant"> 
+                    Valorant
+                </label>
+                <label><input type="checkbox" name="interested_games[]" value="Super Smash Brothers Ultimate"> 
+                    Super Smash Bros. Ultimate
+                </label>
+                <label><input type="checkbox" name="interested_games[]" value="Rainbow 6 Siege"> 
+                    Rainbow 6 Siege
+                </label>
+                <label><input type="checkbox" name="interested_games[]" value="Call of Duty"> 
+                    Call of Duty
+                </label>
+                <label><input type="checkbox" name="interested_games[]" value="Chess"> 
+                    Chess
+                </label>
+                <label><input type="checkbox" name="interested_games[]" value="NBA 2K"> 
+                    NBA 2K
+                </label>
+                <label><input type="checkbox" name="interested_games[]" value="Madden"> 
+                    Madden
+                </label>
+                <label><input type="checkbox" name="interested_games[]" value="Apex Legends"> 
+                    Apex Legends
+                </label>
+                <label><input type="checkbox" name="interested_games[]" value="Fifa"> 
+                    Fifa
+                </label>
+                <label><input type="checkbox" name="interested_games[]" value="Fortnite"> 
+                    Fortnite
+                </label>
+                <label><input type="checkbox" name="interested_games[]" value="Mario Kart"> 
+                    Mario Kart
+                </label>
+                <label><input type="checkbox" name="interested_games[]" value="League of Legends"> 
+                    League of Legends
+                </label>
+                <label><input type="checkbox" name="interested_games[]" value="Other"> 
+                    Other
+                </label>
+                <input type="text" id="otherGame" name="other_game" placeholder="If other, please specify" class="other-game-input">
+            </div>
+        </div>
+        
+        <!-- Submit Button -->
+        <button type="submit" class="submit-button">Submit</button>
+    </form>
+</div>
+
+<style>
+    .registration-form-container {
+        max-width: 500px;
+        background-color: #fff;
+        padding: 20px;
+        margin: 40px auto;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        font-family: Arial, sans-serif;
+    }
+
+    .registration-form-container h2,
+    .registration-form-container p,
+    .registration-form-container label {
+        color: #333;
+    }
+
+    h2 {
+        font-size: 24px;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    p {
+        text-align: center;
+        margin-bottom: 20px;
+        font-size: 16px;
+    }
+
+    .form-group {
+        text-align: center;
+        margin-bottom: 35px;
+    }
+
+    .form-group label {
+        display: block;
+        margin-bottom: 5px;
+    }
+
+    .checkbox-group{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .radio-group {
+        display: block;
+        margin: 10px 0;
+        padding-left: 20px;
+    }
+
+    .checkbox-group label{
+        display: flex;
+        align-items: center;
+        margin-bottom: 5px;
+    }
+
+    .radio-group label {
+        display: inline-block;
+        padding-left: 0px;
+        width: calc(100% - 40px);
+        text-align: left;
+    }
+
+    .form-group input[type="text"],
+    .form-group input[type="email"],
+    .form-group input[type="password"] {
+        width: calc(100% - 20px);
+        padding: 10px;
+        margin-bottom: 10px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+    }
+
+    .checkbox-group input[type="checkbox"],
+    .radio-group input[type="radio"] {
+        margin-left: 10px;
+        vertical-align: middle;
+    }
+
+    .submit-button {
+        display: block;
+        width: 100%;
+        padding: 12px;
+        border: none;
+        border-radius: 4px;
+        background-color: #5c67f2;
+        color: white;
+        cursor: pointer;
+        font-size: 16px;
+        margin-top: 10px;
+    }
+
+    .submit-button:hover {
+        background-color: #5058e2;
+    }
+
+    .checkbox-group {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .checkbox-group label {
+        display: flex;
+        align-items: center;
+        margin-bottom: 5px;
+    }
+
+    .other-game-input {
+        margin-top: 5px;
+        flex-basis: 100%;
+    }
+
+    .large-label {
+        font-size: 18px;
+        font-weight: bold;
+        opacity: 0.95; 
+        transition: all 0.3s ease;
+        margin-bottom: 5px;
+    }
+
+
+    @media (max-width: 768px) {
+        .checkbox-group {
+            flex-direction: column;
+        }
+        .checkbox-group label {
+            margin: 5px 0;
+        }
+    }
+</style>
